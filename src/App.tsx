@@ -2,8 +2,7 @@ import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react'
 import { type PostCount } from './models/types';
 import PostTable from './components/table';
 
-const API_URL =
-  (import.meta.env.VITE_API_URL && import.meta.env.VITE_API_URL.trim()) || '/api/posts';
+const API_URL = import.meta.env.VITE_API_BASE_URL;
 
 /**
  * Hook sencillo para devolver un valor despues de delay
